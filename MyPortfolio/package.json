@@ -1,0 +1,24 @@
+{
+  "name": "vithusan-comp229-assignment2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "npm run dev --prefix client",
+    "setup": "npm install && npm install --prefix client",
+    "test": "node --test tests/api.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.1"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.2.1",
+    "supertest": "^7.1.4"
+  }
+}

@@ -1,0 +1,564 @@
+/* Main container: centres the website on larger screens. */
+.portfolio {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* Makes buttons use the website's font. */
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+/* HEADER AND NAVIGATION */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 0;
+  border-bottom: 1px solid #263247;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.brand-button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+}
+
+/* Custom logo using your initials. */
+.logo {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #67e8f9;
+  color: #0b1120;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.brand-name {
+  font-weight: 700;
+}
+
+.brand-name small {
+  display: block;
+  color: #a9b7cb;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.nav-button {
+  padding: 9px 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: #b8c4d6;
+  font-size: 14px;
+}
+
+.nav-button:hover {
+  background: #172237;
+  color: #ffffff;
+}
+
+/* Highlights the selected navigation item. */
+.nav-button.active {
+  border-color: #34445c;
+  background: #172237;
+  color: #67e8f9;
+}
+
+/* HOME PAGE */
+.hero {
+  padding: 100px 0 72px;
+}
+
+.eyebrow {
+  margin-bottom: 20px;
+  color: #67e8f9;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  margin-bottom: 28px;
+  font-size: clamp(42px, 6vw, 76px);
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #67e8f9;
+}
+
+.hero-description {
+  max-width: 680px;
+  color: #b8c4d6;
+  font-size: 19px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 32px 0 24px;
+}
+
+/* Shared styles for links and buttons. */
+.button {
+  display: inline-block;
+  padding: 13px 22px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+}
+
+.button-primary {
+  background: #67e8f9;
+  color: #0b1120;
+}
+
+.button-primary:hover {
+  background: #a5f3fc;
+}
+
+.button-secondary {
+  border-color: #40516b;
+  background: transparent;
+  color: #e8edf5;
+}
+
+.button-secondary:hover {
+  background: #172237;
+}
+
+.location {
+  color: #a9b7cb;
+  font-size: 14px;
+}
+
+.content-section {
+  padding: 40px 0 64px;
+  border-top: 1px solid #263247;
+}
+
+.content-section h2,
+.mission-card h2 {
+  font-size: clamp(26px, 3vw, 36px);
+}
+
+/* Reusable technology and skill badges. */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-tag {
+  padding: 9px 16px;
+  border: 1px solid #34445c;
+  border-radius: 8px;
+  background: #121d30;
+}
+
+.mission-card {
+  margin-bottom: 72px;
+  padding: 40px;
+  border: 1px solid #34445c;
+  border-radius: 20px;
+  background: #121d30;
+}
+
+.mission-card p:last-child {
+  max-width: 720px;
+  margin-bottom: 0;
+  color: #b8c4d6;
+}
+
+/* SHARED PAGE LAYOUT */
+.page-section {
+  min-height: 65vh;
+  padding: 64px 0 80px;
+}
+
+.page-title {
+  margin-bottom: 40px;
+  font-size: clamp(40px, 6vw, 64px);
+  letter-spacing: -2px;
+}
+
+/* ABOUT ME PAGE */
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.profile-card {
+  padding: 32px 24px;
+  border: 1px solid #34445c;
+  border-radius: 20px;
+  background: #121d30;
+  text-align: center;
+}
+
+/* Crops the profile photo into a circle. */
+.profile-photo {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-card h2 {
+  font-size: 23px;
+}
+
+.profile-card p,
+.about-copy p {
+  color: #b8c4d6;
+}
+
+.about-copy h2 {
+  font-size: 30px;
+}
+
+.about-highlight {
+  margin-top: 28px;
+  padding: 24px;
+  border-left: 3px solid #67e8f9;
+  border-radius: 0 12px 12px 0;
+  background: #121d30;
+}
+
+.about-highlight h3 {
+  margin-top: 0;
+}
+
+.about-highlight ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+  color: #b8c4d6;
+}
+
+/* PROJECTS PAGE */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.project-card {
+  overflow: hidden;
+  border: 1px solid #34445c;
+  border-radius: 20px;
+  background: #121d30;
+}
+
+/* Gives every project image a consistent widescreen area. */
+.project-media {
+  position: relative;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #17364a, #182440);
+}
+
+/* Shows the full image without cropping screenshots or text. */
+.project-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-image-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px;
+}
+
+.project-image-fallback strong {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.project-image-fallback span {
+  color: #b8c4d6;
+  font-size: 13px;
+}
+
+.project-content {
+  padding: 28px;
+}
+
+.project-content h2 {
+  font-size: 26px;
+}
+
+.project-content > p:not(.eyebrow):not(.project-status) {
+  color: #b8c4d6;
+}
+
+.project-status {
+  display: inline-block;
+  margin: 0 0 16px;
+  padding: 5px 10px;
+  border: 1px solid #365769;
+  border-radius: 6px;
+  color: #67e8f9;
+  font-size: 12px;
+}
+
+.project-details {
+  margin: 24px 0;
+}
+
+.project-details dt {
+  margin-top: 18px;
+  color: #e8edf5;
+  font-weight: 600;
+}
+
+.project-details dd {
+  margin: 6px 0 0;
+  color: #b8c4d6;
+}
+
+.project-content .skills-list {
+  margin-top: 24px;
+}
+
+.project-content .skill-tag {
+  font-size: 12px;
+}
+
+/* EDUCATION PAGE */
+.education-list {
+  display: grid;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.education-card {
+  padding: 32px;
+  border: 1px solid #34445c;
+  border-radius: 20px;
+  background: #121d30;
+}
+
+.education-card h2 {
+  margin-bottom: 12px;
+  font-size: clamp(23px, 3vw, 30px);
+}
+
+.education-date {
+  margin-bottom: 14px;
+  color: #b8c4d6;
+}
+
+.education-status {
+  display: inline-block;
+  padding: 5px 12px;
+  border: 1px solid #365769;
+  border-radius: 6px;
+  color: #67e8f9;
+  font-size: 13px;
+}
+
+.education-description {
+  max-width: 760px;
+  margin-top: 22px;
+  margin-bottom: 0;
+  color: #b8c4d6;
+}
+
+/* SERVICES PAGE */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.service-card,
+.contact-panel,
+.contact-form {
+  padding: 28px;
+  border: 1px solid #34445c;
+  border-radius: 20px;
+  background: #121d30;
+}
+
+.service-number {
+  display: block;
+  margin-bottom: 24px;
+  color: #67e8f9;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.service-card h2 {
+  font-size: 24px;
+}
+
+.service-card p,
+.contact-panel p {
+  color: #b8c4d6;
+}
+
+/* CONTACT PAGE */
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.contact-panel a {
+  color: #67e8f9;
+  overflow-wrap: anywhere;
+}
+
+.contact-form {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #40516b;
+  border-radius: 8px;
+  background: #0b1120;
+  color: #e8edf5;
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* Visible keyboard focus for form fields. */
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 2px solid #67e8f9;
+  outline-offset: 2px;
+}
+
+.form-note {
+  color: #b8c4d6;
+  font-size: 13px;
+}
+
+/* Confirmation shown on Home after the demo form is submitted. */
+.submission-notice {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid #365769;
+  border-radius: 12px;
+  background: #17364a;
+}
+
+/* FOOTER */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 0;
+  border-top: 1px solid #263247;
+  color: #a9b7cb;
+  font-size: 13px;
+}
+
+/* TABLET AND MOBILE: stacks multi-column sections. */
+@media (max-width: 760px) {
+  .about-grid,
+  .projects-grid,
+  .services-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav {
+    width: 100%;
+  }
+
+  .nav-button {
+    padding: 9px 10px;
+  }
+}
+
+/* SMALL SCREENS: reduces spacing for a comfortable layout. */
+@media (max-width: 600px) {
+  .portfolio {
+    padding: 0 20px;
+  }
+
+  .hero {
+    padding: 64px 0 48px;
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+  .mission-card {
+    padding: 26px;
+  }
+
+  .education-card,
+  .service-card,
+  .contact-panel,
+  .contact-form,
+  .project-content {
+    padding: 24px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 0;
+  }
+}

@@ -1,0 +1,164 @@
+/* Includes padding and borders in each element's calculated width. */
+* {
+  box-sizing: border-box;
+}
+
+/* Sets the default font, text colour, and background. */
+:root {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: #e8edf5;
+  background: #0b1120;
+  line-height: 1.6;
+  font-synthesis: none;
+}
+
+/* Removes the browser's default space around the page. */
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+/* Makes links inherit the surrounding text colour. */
+a {
+  color: inherit;
+}
+
+/* Keeps headings tight and readable. */
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  line-height: 1.15;
+}
+
+/* Shows a clear outline when navigating with the keyboard. */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #67e8f9;
+  outline-offset: 5px;
+}
+
+/* Adds space above sections when jumping to them with a link. */
+section[id] {
+  scroll-margin-top: 24px;
+}
+
+/* Profile photo */
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Service cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.service-card,
+.contact-panel,
+.contact-form {
+  padding: 28px;
+  border: 1px solid #34445c;
+  border-radius: 20px;
+  background: #121d30;
+}
+
+.service-number {
+  display: block;
+  margin-bottom: 24px;
+  color: #67e8f9;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.service-card h2 {
+  font-size: 24px;
+}
+
+.service-card p,
+.contact-panel p {
+  color: #b8c4d6;
+}
+
+/* Contact layout and fields */
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.contact-panel a {
+  color: #67e8f9;
+  overflow-wrap: anywhere;
+}
+
+.contact-form {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #40516b;
+  border-radius: 8px;
+  background: #0b1120;
+  color: #e8edf5;
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 2px solid #67e8f9;
+  outline-offset: 2px;
+}
+
+.form-note {
+  color: #b8c4d6;
+  font-size: 13px;
+}
+
+.submission-notice {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid #365769;
+  border-radius: 12px;
+  background: #17364a;
+}
+
+.button-secondary {
+  background: transparent;
+  color: #e8edf5;
+}
+
+.button-secondary:hover {
+  background: #172237;
+}
+
+/* Mobile layout */
+@media (max-width: 760px) {
+  .services-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
