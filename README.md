@@ -53,9 +53,6 @@ Submit the separate screenshot evidence Word document. After installing this ada
 ## Explain it to your professor
 React is the user interface. Express matches HTTP methods and URLs to controllers. Controllers validate and manipulate records using Mongoose models. Mongoose stores documents in MongoDB. A JWT proves that a request signed in successfully. Middleware verifies the token before allowing protected controllers to run. `concurrently` starts frontend and backend together; nodemon restarts the backend when files change.
 
-## Remaining student actions
-Configure your real MongoDB connection; run and review the application; capture screenshots; finish the Word evidence document; push to your GitHub; submit all three requested items. No GitHub URL or database screenshot is fabricated in this package. Week 3/6 course starter files and authentication slides were not supplied, so compare this implementation with any additional conventions required there.
-
 ## Adaptation of the provided class starter
 This version starts from the supplied MyPortfolioBNew1 project and replaces its sample client with the Assignment 1 portfolio. It retains the root server.js, config/config.js, server/express.js and separate models, controllers and routes used by that starter. Contact and user controller names follow its create, list, read, update, remove and ID lookup pattern. Projects, qualifications, delete-all operations and JWT authentication extend it to meet Assignment 2.
 
